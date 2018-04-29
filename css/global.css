@@ -2,11 +2,32 @@ body {
     background: #181818;
     color: #ffffff;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* universal cases */
 .upcase {
     text-transform: uppercase;
+}
+
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+    width: 0.45em;
+}
+
+.chevron.bottom:before {
+	top: 0;
+    transform: rotate(135deg);
+    margin-left: 45px;
 }
 
 .nav-header {
@@ -35,15 +56,16 @@ body {
 }
 
 .search-nav {
-    max-width: 700px;
+    max-width: 450px;
     min-width: 300px;
-    min-height: 85px;
+    min-height: auto;
     background: #000;
     border: 4px solid #339988;
     margin: -4% auto;
     border-radius: 8px;
+    padding: 10px;
+    display: table;
 }
-
 .logo {
     /* border: 2px solid #339988; */
     width: 225px;
@@ -60,16 +82,21 @@ body {
 
 /* dropdown code */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #339988;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border-radius:3px;
+    margin: 0px;
+    margin-right: 15px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: #257968;
 }
 
 #myInput {
@@ -87,7 +114,7 @@ body {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: table-cell;
 }
 
 .dropdown-content {
@@ -110,3 +137,28 @@ body {
 .dropdown a:hover {background-color: #ddd}
 
 .show {display:block;}
+
+.where {
+    display: flex;
+}
+
+.sc {
+    background-color: #339988;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius:3px;
+    margin: 0 11px;
+}
+
+.nc {
+    background-color: #339988;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius:3px;
+}
