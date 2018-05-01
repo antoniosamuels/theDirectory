@@ -56,7 +56,7 @@ body {
 }
 
 .search-nav {
-    max-width: 450px;
+    max-width: 100%;
     min-width: 300px;
     min-height: auto;
     background: #000;
@@ -161,4 +161,32 @@ body {
     border: none;
     cursor: pointer;
     border-radius:3px;
+}
+
+.divder {
+    display: table;
+    margin: 9% auto;
+}
+
+.grouprow {
+    width: 100%;
+    height: auto;
+    /* background: #88d8fd; */
+    padding: 15px;
+    display: table;
+}
+
+.b-card {
+    background: royalblue;
+    height: 355px;
+    width: 270px;
+    display: inline-table;
+    padding: 0px;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
 }
